@@ -1,0 +1,77 @@
+html{
+    background-color: rgba(255, 149, 100, 0.568);
+}
+main{
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+
+}
+
+h1{
+    text-align: center;
+}
+
+fieldset{
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+fieldset legend{
+    font-size: large;
+}
+#advertencia{
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#datos{
+    display: flex;
+    flex-direction: column;
+}
+#datos p{
+    color: blue;
+    font-weight: 550;
+}
+#telefonos{
+    display: flex;
+}
+.nombreAgenda{
+    width: 14rem;
+}
+
+#nuevo{
+    display: flex;
+    flex-direction: column;
+}
+.campos{
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+.campos label{
+    width: 5rem ;
+    font-weight: bold;
+    color: blue;
+}
+
+.buttom{
+    border-radius: 5%;
+    background-color: white;
+    border-width: 1px;
+    padding: 0.5rem 1rem 0.5rem;
+    margin-right: 1rem;
+    font-weight: bold;
+
+}
+
+.verde{
+    color: green; 
+}
+.rojo{
+    color: red; 
+}
+.azul{
+    color: blue;
+}

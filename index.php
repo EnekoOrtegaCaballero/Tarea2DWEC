@@ -13,9 +13,11 @@
  <body>
      <main>
         <h1>Agenda</h1>
+        <!-- si la sesión esta vacia no mostraré el formulario -->
         <?php  if(!empty($_SESSION['misDatos'])){?>
             <fieldset id="datos">
                 <legend>Datos Agenda</legend>
+                <!-- recorremos el array de la sesión y con un foreach imprimimos en parrafos dentro de un div.  -->
                 <?php foreach($_SESSION['misDatos'] as $nombre => $telefono){ ?>
                     <div id="telefonos">
                         <p class="nombreAgenda"><?=$nombre?></p>
@@ -24,6 +26,7 @@
                 <?php } ?>
             </fieldset>
         <?php } ?>
+        <!-- Genero un formulario que enviara los datos por post.  -->
 
         <form action="index.php" method="POST">
             <fieldset id="nuevo" >
@@ -40,10 +43,13 @@
 
                 <div>
                     <input class="azul" class="buttom" type="submit" name="add" value="Añadir contacto"/>
+                    <!-- tipo reset para limpiar los campos -->
                     <input class="verde" class="buttom" type="reset" name="limpiar" value="Limpiar campos" />
                 </div>  
             </fieldset>
         </form>
+        <!-- si la sesión esta vacia no mostraré el formulario -->
+        <!-- Tal y como se solicita lo envio por get.  -->
         <?php  if(!empty($_SESSION['misDatos'])){?>
             <form action="index.php" method="$_GET">
             <fieldset id="vaciar">
